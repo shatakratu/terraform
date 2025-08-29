@@ -1,11 +1,5 @@
 
-# variable "sattvika_folder" {
-#   default     = "xxxxxxxxxxxxxxxxxx"
-#   description = "sattvika folder id"
-# }
-
 variable "sattvika_folder" {
-  description = "Folder ID in Yandex Cloud"
-  type        = string
-  sensitive   = true
+  default     = "b1ghsaie35tos76uob42"
+  description = "sattvika folder id"
 }
