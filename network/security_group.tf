@@ -11,7 +11,7 @@ resource "yandex_vpc_security_group" "kubernetes_security_group" {
     content {
       port           = ingress.value
       protocol       = "TCP"
-      v4_cidr_blocks = ["x.x.x.x/32"]
+      v4_cidr_blocks = ["123.19.224.16/32"]
       description    = "access from bastion"
     }
   }
@@ -21,7 +21,7 @@ resource "yandex_vpc_security_group" "kubernetes_security_group" {
     content {
       port           = ingress.value
       protocol       = "TCP"
-      v4_cidr_blocks = ["x.x.x.x/32"]
+      v4_cidr_blocks = ["123.19.224.16/32"]
       description    = "access from load balancer"
     }
   }
