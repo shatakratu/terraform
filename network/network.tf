@@ -2,7 +2,7 @@
 
 resource "yandex_vpc_network" "apsara_network" {
   name        = "apsara-network"
-  folder_id   = var.sattvika_folder
+  folder_id   = var.YC_FOLDER_ID
   description = "kubernetes network"
 }
 
