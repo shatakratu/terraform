@@ -1,4 +1,13 @@
-# Yandex cloud
+# Yandex Cloud provider
+
+provider "yandex" {
+  token     = var.YC_TOKEN
+  folder_id = var.YC_FOLDER_ID
+  cloud_id  = "your-cloud-id" # если нужен (можно убрать)
+  zone      = "ru-central1-a"
+}
+
+# Terraform set
 
 terraform {
   required_providers {
@@ -8,9 +17,6 @@ terraform {
     }
   }
 
-
-# Terraform cloud
-
   cloud {
     organization = "sattvika"
     workspaces {
@@ -18,5 +24,3 @@ terraform {
     }
   }
 }
-
-
