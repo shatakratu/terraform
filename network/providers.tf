@@ -3,7 +3,6 @@
 provider "yandex" {
   token     = var.YC_TOKEN
   folder_id = var.YC_FOLDER_ID
-  cloud_id  = "your-cloud-id" # если нужен (можно убрать)
   zone      = "ru-central1-a"
 }
 
