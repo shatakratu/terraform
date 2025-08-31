@@ -33,7 +33,7 @@ resource "yandex_vpc_subnet" "menaka_subnet" {
 resource "yandex_vpc_subnet" "urvashi_subnet" {
   name           = "urvashi-subnet"
   zone           = "ru-central1-d"
-  v4_cidr_blocks = ["10.10.30.0/24"]
+  v4_cidr_blocks = ["10.10.80.0/24"]
   network_id     = yandex_vpc_network.apsara_network.id
   route_table_id = yandex_vpc_route_table.apsara_route_table.id
   description    = "master3, worker3"
